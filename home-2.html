@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IronTribe CrossFit - WOD + Competition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">
+        <span class="brand-mark h-display">IronTribe</span> <span class="text-white-50">CrossFit</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 ms-auto order-lg-2">
+        <button id="themeToggle" class="btn btn-sm btn-ghost" type="button" aria-pressed="false">Dark</button>
+        <a class="btn btn-sm btn-ghost d-none d-md-inline-flex" href="login.html">Login</a>
+        <a class="btn btn-sm btn-brand d-none d-md-inline-flex" href="register.html">Sign up</a>
+        <button class="navbar-toggler btn btn-sm btn-ghost" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+          Menu
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-1">
+        <ul class="navbar-nav ms-lg-4 gap-lg-1">
+          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="home-2.html">WOD + Competition</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="services.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="blog.html">Stories</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title h-display" id="offcanvasNavLabel">IronTribe</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-grid gap-2 mb-3">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-brand" href="register.html">Sign up</a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-2.html">WOD + Competition</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="page-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="kicker">Competition & stats</div>
+          <h1 class="h-display mega mt-2">WOD schedule, leaderboards, PRs.</h1>
+          <p class="sublead mt-3 mb-0">A performance-first home for athletes who want structure, tracking, and that industrial edge.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="surface p-4">
+            <div class="text-white-50 small">Next class</div>
+            <div class="h-display">6:30 AM</div>
+            <div class="text-white-50">Engine + skill</div>
+            <a class="btn btn-sm btn-brand mt-3" href="pricing.html">Reserve Spot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="surface p-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <h3 class="h-display mb-0">This Week’s WOD Schedule</h3>
+              <a class="btn btn-sm btn-ghost" href="dashboard.html">Manage in Dashboard</a>
+            </div>
+            <div class="table-responsive mt-3">
+              <table class="table table-dark table-hover align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>WOD</th>
+                    <th>Focus</th>
+                    <th>Level</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mon</td>
+                    <td class="mono">6:30 AM</td>
+                    <td>Back Squat + 10:00 AMRAP</td>
+                    <td>Strength</td>
+                    <td>All</td>
+                  </tr>
+                  <tr>
+                    <td>Tue</td>
+                    <td class="mono">7:00 PM</td>
+                    <td>Gymnastics Skill + EMOM</td>
+                    <td>Skill</td>
+                    <td>All</td>
+                  </tr>
+                  <tr>
+                    <td>Wed</td>
+                    <td class="mono">6:30 AM</td>
+                    <td>Deadlift + 12:00 AMRAP</td>
+                    <td>Strength</td>
+                    <td>All</td>
+                  </tr>
+                  <tr>
+                    <td>Thu</td>
+                    <td class="mono">7:00 PM</td>
+                    <td>Intervals: Row/Bike</td>
+                    <td>Engine</td>
+                    <td>All</td>
+                  </tr>
+                  <tr>
+                    <td>Sat</td>
+                    <td class="mono">9:00 AM</td>
+                    <td>Team WOD</td>
+                    <td>Community</td>
+                    <td>All</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="text-white-50 small mt-2">UI demo schedule. Real scheduling can be wired later.</div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card-industrial p-4 mb-4">
+            <div class="kicker">Leaderboard snapshot</div>
+            <h4 class="h-display mt-2">Today’s Top Scores</h4>
+            <div class="table-responsive mt-3">
+              <table class="table table-dark table-sm align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Athlete</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="mono">1</td><td>Arjun</td><td class="mono">10:42</td></tr>
+                  <tr><td class="mono">2</td><td>Lea</td><td class="mono">11:10</td></tr>
+                  <tr><td class="mono">3</td><td>Sam</td><td class="mono">12:03</td></tr>
+                  <tr><td class="mono">4</td><td>Mira</td><td class="mono">12:21</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="surface p-4">
+            <div class="kicker">PR chase</div>
+            <h4 class="h-display mt-2">Your next targets</h4>
+            <div class="row g-3 mt-1">
+              <div class="col-6">
+                <div class="card-industrial p-3 h-100">
+                  <div class="text-white-50 small">Back squat</div>
+                  <div class="h-display">+5 kg</div>
+                  <div class="mono">In 3 weeks</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-industrial p-3 h-100">
+                  <div class="text-white-50 small">2k row</div>
+                  <div class="h-display">-10 sec</div>
+                  <div class="mono">In 2 weeks</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a class="btn btn-brand w-100" href="dashboard.html">Open Performance Dashboard</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <hr class="hr-steel my-5">
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card-industrial p-4 h-100">
+            <h5 class="h-display">Competition prep</h5>
+            <p class="text-white-50 mb-0">Cycle strength, skill, and engine with progressive tracking and coach feedback.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-industrial p-4 h-100">
+            <h5 class="h-display">Benchmark library</h5>
+            <p class="text-white-50 mb-0">Fran, Helen, Murph—record scores and watch the curve move.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-industrial p-4 h-100">
+            <h5 class="h-display">Attendance habits</h5>
+            <p class="text-white-50 mb-0">UI-only attendance tracking to reinforce consistency and recovery.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <div class="h-display brand-mark">IronTribe</div>
+          <p class="text-white-50">Hardcore gym power + strong tribe energy + professional performance tracking.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-sm btn-ghost" href="#">IG</a>
+            <a class="btn btn-sm btn-ghost" href="#">YT</a>
+            <a class="btn btn-sm btn-ghost" href="#">FB</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="h-display mb-2">Company</div>
+          <div class="d-grid gap-1">
+            <a class="text-white-50" href="about.html">About</a>
+            <a class="text-white-50" href="services.html">Programs</a>
+            <a class="text-white-50" href="pricing.html">Pricing</a>
+            <a class="text-white-50" href="blog.html">Stories</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="h-display mb-2">Support</div>
+          <div class="d-grid gap-1">
+            <a class="text-white-50" href="contact.html">Contact</a>
+            <a class="text-white-50" href="coming-soon.html">Events</a>
+            <a class="text-white-50" href="404.html">Help Center</a>
+            <a class="text-white-50" href="login.html">Member Login</a>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="h-display mb-2">Newsletter</div>
+          <form class="d-grid gap-2">
+            <input class="form-control" type="email" placeholder="Email address" required>
+            <button class="btn btn-brand" type="submit">Subscribe</button>
+            <div class="text-white-50 small">Weekly WOD drops. Community events. Zero spam.</div>
+          </form>
+        </div>
+      </div>
+      <hr class="hr-steel my-4">
+      <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center">
+        <div class="text-white-50">© <span id="currentYear">2026</span> IronTribe CrossFit. All rights reserved.</div>
+        <div class="text-white-50">Built for performance.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn btn-brand back-to-top" type="button">Top</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
