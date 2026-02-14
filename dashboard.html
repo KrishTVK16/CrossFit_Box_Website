@@ -1,72 +1,41 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IronTribe CrossFit - Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
     <div class="container">
-      <a class="navbar-brand text-white" href="index.html">
-        <span class="brand-mark h-display">IronTribe</span> <span class="text-white-50">CrossFit</span>
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="CrossFit Box Logo">
       </a>
 
       <div class="d-flex align-items-center gap-2 ms-auto order-lg-2">
         <button id="themeToggle" class="btn btn-sm btn-ghost" type="button" aria-pressed="false">Dark</button>
-        <a class="btn btn-sm btn-ghost d-none d-md-inline-flex" href="login.html">Login</a>
-        <a class="btn btn-sm btn-brand d-none d-md-inline-flex" href="register.html">Sign up</a>
-        <button class="navbar-toggler btn btn-sm btn-ghost" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">Menu</button>
-      </div>
-
-      <div class="collapse navbar-collapse order-lg-1">
-        <ul class="navbar-nav ms-lg-4 gap-lg-1">
-          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="home-2.html">WOD + Competition</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="services.html">Programs</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="blog.html">Stories</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="dashboard.html">Dashboard</a></li>
-        </ul>
+        <a class="btn btn-sm btn-brand" href="index.html">Logout</a>
       </div>
     </div>
   </nav>
 
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title h-display" id="offcanvasNavLabel">IronTribe</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="d-grid gap-2 mb-3">
-        <a class="btn btn-ghost" href="login.html">Login</a>
-        <a class="btn btn-brand" href="register.html">Sign up</a>
-      </div>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="home-2.html">WOD + Competition</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Stories</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
-      </ul>
-    </div>
-  </div>
 
   <header class="page-hero">
     <div class="container">
       <div class="kicker">Member + admin style</div>
       <h1 class="h-display mega mt-2">Performance Dashboard</h1>
-      <p class="sublead mt-3 mb-0">UI-only tracking for WOD schedules, attendance, PRs, leaderboards, and member performance cards.</p>
+      <p class="sublead mt-3 mb-0">UI-only tracking for WOD schedules, attendance, PRs, leaderboards, and member
+        performance cards.</p>
     </div>
   </header>
 
@@ -118,11 +87,31 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td class="mono">1</td><td>Arjun</td><td class="mono">10:42</td></tr>
-                  <tr><td class="mono">2</td><td>Lea</td><td class="mono">11:10</td></tr>
-                  <tr><td class="mono">3</td><td>Sam</td><td class="mono">12:03</td></tr>
-                  <tr><td class="mono">4</td><td>Mira</td><td class="mono">12:21</td></tr>
-                  <tr><td class="mono">5</td><td>Noah</td><td class="mono">12:35</td></tr>
+                  <tr>
+                    <td class="mono">1</td>
+                    <td>Arjun</td>
+                    <td class="mono">10:42</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">2</td>
+                    <td>Lea</td>
+                    <td class="mono">11:10</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">3</td>
+                    <td>Sam</td>
+                    <td class="mono">12:03</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">4</td>
+                    <td>Mira</td>
+                    <td class="mono">12:21</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">5</td>
+                    <td>Noah</td>
+                    <td class="mono">12:35</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -248,8 +237,18 @@
                       </tr>
                     </thead>
                     <tbody id="attendanceTableBody">
-                      <tr><td>Mira</td><td class="mono">2026-01-22</td><td class="mono">7:00 PM</td><td>Present</td></tr>
-                      <tr><td>Arjun</td><td class="mono">2026-01-23</td><td class="mono">6:30 AM</td><td>Present</td></tr>
+                      <tr>
+                        <td>Mira</td>
+                        <td class="mono">2026-01-22</td>
+                        <td class="mono">7:00 PM</td>
+                        <td>Present</td>
+                      </tr>
+                      <tr>
+                        <td>Arjun</td>
+                        <td class="mono">2026-01-23</td>
+                        <td class="mono">6:30 AM</td>
+                        <td>Present</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -301,8 +300,18 @@
                       </tr>
                     </thead>
                     <tbody id="prTableBody">
-                      <tr><td>Deadlift</td><td class="mono">100 kg</td><td class="mono">2026-01-15</td><td>Verified</td></tr>
-                      <tr><td>2k Row</td><td class="mono">8:12</td><td class="mono">2026-01-18</td><td>Verified</td></tr>
+                      <tr>
+                        <td>Deadlift</td>
+                        <td class="mono">100 kg</td>
+                        <td class="mono">2026-01-15</td>
+                        <td>Verified</td>
+                      </tr>
+                      <tr>
+                        <td>2k Row</td>
+                        <td class="mono">8:12</td>
+                        <td class="mono">2026-01-18</td>
+                        <td>Verified</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -345,52 +354,6 @@
     </div>
   </section>
 
-  <footer class="footer mt-5">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-3">
-          <div class="h-display brand-mark">IronTribe</div>
-          <p class="text-white-50">Hardcore gym power + strong tribe energy + professional performance tracking.</p>
-          <div class="d-flex gap-2">
-            <a class="btn btn-sm btn-ghost" href="#">IG</a>
-            <a class="btn btn-sm btn-ghost" href="#">YT</a>
-            <a class="btn btn-sm btn-ghost" href="#">FB</a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="h-display mb-2">Company</div>
-          <div class="d-grid gap-1">
-            <a class="text-white-50" href="about.html">About</a>
-            <a class="text-white-50" href="services.html">Programs</a>
-            <a class="text-white-50" href="pricing.html">Pricing</a>
-            <a class="text-white-50" href="blog.html">Stories</a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="h-display mb-2">Support</div>
-          <div class="d-grid gap-1">
-            <a class="text-white-50" href="contact.html">Contact</a>
-            <a class="text-white-50" href="coming-soon.html">Events</a>
-            <a class="text-white-50" href="404.html">Help Center</a>
-            <a class="text-white-50" href="login.html">Member Login</a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="h-display mb-2">Newsletter</div>
-          <form class="d-grid gap-2">
-            <input class="form-control" type="email" placeholder="Email address" required>
-            <button class="btn btn-brand" type="submit">Subscribe</button>
-            <div class="text-white-50 small">Weekly WOD drops. Community events. Zero spam.</div>
-          </form>
-        </div>
-      </div>
-      <hr class="hr-steel my-4">
-      <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center">
-        <div class="text-white-50">© <span id="currentYear">2026</span> IronTribe CrossFit. All rights reserved.</div>
-        <div class="text-white-50">Built for performance.</div>
-      </div>
-    </div>
-  </footer>
 
   <button id="backToTop" class="btn btn-brand back-to-top" type="button">Top</button>
 
@@ -398,4 +361,5 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/dashboard.js"></script>
 </body>
+
 </html>

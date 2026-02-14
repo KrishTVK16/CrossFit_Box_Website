@@ -1,158 +1,98 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IronTribe CrossFit - Login</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+  <div class="auth-page">
     <div class="container">
-      <a class="navbar-brand text-white" href="index.html">
-        <span class="brand-mark h-display">IronTribe</span> <span class="text-white-50">CrossFit</span>
-      </a>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-8">
+          <div class="auth-card text-center">
+            <a href="index.html">
+              <img src="assets/images/logo.svg" alt="IronTribe CrossFit" class="auth-logo">
+            </a>
+            <div class="surface p-4 p-lg-5 text-start">
+              <h3 class="h-display" style="text-align: center;">Login</h3>
+              <form class="mt-3">
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="you@email.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-control" placeholder="••••••••" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                  </div>
+                  <a class="text-white-50" href="coming-soon.html">Forgot password?</a>
+                </div>
+                <button class="btn btn-brand btn-lg w-100" type="submit">Sign in</button>
 
-      <div class="d-flex align-items-center gap-2 ms-auto order-lg-2">
-        <button id="themeToggle" class="btn btn-sm btn-ghost" type="button" aria-pressed="false">Dark</button>
-        <a class="btn btn-sm btn-ghost d-none d-md-inline-flex" href="login.html">Login</a>
-        <a class="btn btn-sm btn-brand d-none d-md-inline-flex" href="register.html">Sign up</a>
-        <button class="navbar-toggler btn btn-sm btn-ghost" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">Menu</button>
-      </div>
+                <div class="position-relative my-4">
+                  <hr class="hr-steel">
+                  <span
+                    class="position-absolute top-50 start-50 translate-middle px-3 surface text-white-50 small">OR</span>
+                </div>
 
-      <div class="collapse navbar-collapse order-lg-1">
-        <ul class="navbar-nav ms-lg-4 gap-lg-1">
-          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="home-2.html">WOD + Competition</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="services.html">Programs</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="blog.html">Stories</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="dashboard.html">Dashboard</a></li>
-        </ul>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-outline-secondary d-flex align-items-center justify-content-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                      <path fill="#4285F4"
+                        d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" />
+                      <path fill="#34A853"
+                        d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" />
+                      <path fill="#FBBC05"
+                        d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707s.102-1.167.282-1.707V4.96H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.041l3.007-2.334z" />
+                      <path fill="#EA4335"
+                        d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" />
+                    </svg>
+                    Continue with Google
+                  </a>
+                  <a href="#" class="btn btn-outline-secondary d-flex align-items-center justify-content-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                      class="bi bi-apple" viewBox="0 0 16 16">
+                      <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.097-.369-.313-.579-.216-.21-.52-.42-.857-.594-.336-.174-.68-.268-1.026-.268-.344 0-1.22.23-1.638.23-.418 0-1.16-.23-1.62-.23-.46 0-1.298.234-1.84.594-.541.36-1.07.864-1.353 1.36-.282.496-.482 1.29-.482 2.189 0 .899.23 2.189.658 3.013.428.824 1.132 1.75 1.84 2.258.707.508 1.414.234 1.84.234.426 0 .945.274 1.62.274.675 0 1.218-.274 1.62-.274.402 0 1.163.274 1.84-.234.676-.508 1.414-1.434 1.84-2.258.428-.824.658-2.114.658-3.013 0-.014 0-.03-.002-.045" />
+                    </svg>
+                    Continue with Apple
+                  </a>
+                </div>
+              </form>
+              <hr class="hr-steel my-4">
+              <div class="text-center text-theme-muted">New here? <a class="nav-link d-inline p-0 text-brand"
+                  href="register.html">Create an
+                  account</a></div>
+            </div>
+            <div class="text-white-50 mt-4 small">
+              © 2026 IronTribe CrossFit.
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title h-display" id="offcanvasNavLabel">IronTribe</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="d-grid gap-2 mb-3">
-        <a class="btn btn-ghost" href="login.html">Login</a>
-        <a class="btn btn-brand" href="register.html">Sign up</a>
-      </div>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="home-2.html">WOD + Competition</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Stories</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
-      </ul>
     </div>
   </div>
 
-  <header class="page-hero">
-    <div class="container">
-      <div class="kicker">Member sign-in</div>
-      <h1 class="h-display mega mt-2">Welcome back. Log your grind.</h1>
-      <p class="sublead mt-3 mb-0">Access your performance dashboard, attendance, PRs, and leaderboards.</p>
-    </div>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="surface p-4 p-lg-5">
-            <h3 class="h-display">Login</h3>
-            <form class="mt-3">
-              <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="you@email.com" required>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" placeholder="••••••••" required>
-              </div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="rememberMe">
-                  <label class="form-check-label" for="rememberMe">Remember me</label>
-                </div>
-                <a class="text-white-50" href="coming-soon.html">Forgot password?</a>
-              </div>
-              <button class="btn btn-brand btn-lg w-100" type="submit">Sign in</button>
-              <div class="text-white-50 small mt-2">UI only. Wire authentication later.</div>
-            </form>
-            <hr class="hr-steel my-4">
-            <div class="text-center text-white-50">New here? <a class="text-white" href="register.html">Create an account</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer mt-5">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-3">
-          <div class="h-display brand-mark">IronTribe</div>
-          <p class="text-white-50">Hardcore gym power + strong tribe energy + professional performance tracking.</p>
-          <div class="d-flex gap-2">
-            <a class="btn btn-sm btn-ghost" href="#">IG</a>
-            <a class="btn btn-sm btn-ghost" href="#">YT</a>
-            <a class="btn btn-sm btn-ghost" href="#">FB</a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="h-display mb-2">Company</div>
-          <div class="d-grid gap-1">
-            <a class="text-white-50" href="about.html">About</a>
-            <a class="text-white-50" href="services.html">Programs</a>
-            <a class="text-white-50" href="pricing.html">Pricing</a>
-            <a class="text-white-50" href="blog.html">Stories</a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="h-display mb-2">Support</div>
-          <div class="d-grid gap-1">
-            <a class="text-white-50" href="contact.html">Contact</a>
-            <a class="text-white-50" href="coming-soon.html">Events</a>
-            <a class="text-white-50" href="404.html">Help Center</a>
-            <a class="text-white-50" href="login.html">Member Login</a>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="h-display mb-2">Newsletter</div>
-          <form class="d-grid gap-2">
-            <input class="form-control" type="email" placeholder="Email address" required>
-            <button class="btn btn-brand" type="submit">Subscribe</button>
-            <div class="text-white-50 small">Weekly WOD drops. Community events. Zero spam.</div>
-          </form>
-        </div>
-      </div>
-      <hr class="hr-steel my-4">
-      <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center">
-        <div class="text-white-50">© <span id="currentYear">2026</span> IronTribe CrossFit. All rights reserved.</div>
-        <div class="text-white-50">Built for performance.</div>
-      </div>
-    </div>
-  </footer>
-
-  <button id="backToTop" class="btn btn-brand back-to-top" type="button">Top</button>
+  <button id="themeToggle" class="btn btn-sm btn-ghost position-fixed top-0 end-0 m-3" type="button"
+    aria-pressed="false">Dark</button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
