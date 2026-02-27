@@ -51,10 +51,11 @@ body {
 }
 
 .auth-logo {
-  height: 80px;
-  width: auto;
+  height: 70px;
+  width: 198px;
+  object-fit: contain;
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto 24px;
   transition: transform 0.3s ease;
 }
 
@@ -88,7 +89,8 @@ body {
 @media (max-width: 768px) {
 
   .navbar-brand img,
-  .footer-logo-card img {
+  .footer-logo-card img,
+  .auth-logo {
     height: 56px;
     width: 160px;
   }
@@ -97,7 +99,8 @@ body {
 @media (max-width: 480px) {
 
   .navbar-brand img,
-  .footer-logo-card img {
+  .footer-logo-card img,
+  .auth-logo {
     height: 46px;
     width: 130px;
   }
@@ -153,7 +156,8 @@ html[data-bs-theme="light"] .navbar-glass {
     gap: 0.25rem !important;
   }
 
-  .navbar-brand img {
+  .navbar-brand img,
+  .auth-logo {
     height: 46px;
     width: 130px;
   }
