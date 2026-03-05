@@ -89,7 +89,19 @@
   <section class="section">
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-8">
+        <!-- Search section: first on mobile, stays in sidebar position on desktop -->
+        <div class="col-lg-4 order-1 order-lg-2">
+          <div class="surface p-4 mb-4">
+            <h4 class="h-display">Search</h4>
+            <div class="d-grid gap-2 mt-3">
+              <input class="form-control" placeholder="Search stories (UI)" type="text">
+              <button class="btn btn-brand" type="button">Search</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog cards -->
+        <div class="col-lg-8 order-2 order-lg-1">
           <div class="row g-4">
             <div class="col-md-6">
               <div class="card-industrial h-100 overflow-hidden">
@@ -101,7 +113,7 @@
                     <div class="kicker">Member spotlight</div>
                     <div class="small opacity-50 mono">Feb 22, 2026</div>
                   </div>
-                  <h3 class="h-display mt-2">Mira’s 90-day comeback</h3>
+                  <h3 class="h-display mt-2">Mira's 90-day comeback</h3>
                   <p class="text-white-50">From inconsistent to unstoppable—how the tribe built a routine that stuck.
                   </p>
                   <a class="btn btn-brand mt-auto" href="blog-details.html">Read more</a>
@@ -168,15 +180,8 @@
           </nav>
         </div>
 
-        <div class="col-lg-4">
-          <div class="surface p-4 mb-4">
-            <h4 class="h-display">Search</h4>
-            <div class="d-grid gap-2 mt-3">
-              <input class="form-control" placeholder="Search stories (UI)" type="text">
-              <button class="btn btn-brand" type="button">Search</button>
-            </div>
-          </div>
-
+        <!-- Remaining sidebar: Categories & Performance tie-in -->
+        <div class="col-lg-4 order-3">
           <div class="card-industrial p-4 mb-4">
             <div class="kicker">Categories</div>
             <div class="d-grid gap-2 mt-2">
